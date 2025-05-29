@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hospital-booking-backend-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hospital-booking-backend
+  template:
+    metadata:
+      labels:
+        app: hospital-booking-backend
+    spec:
+      containers:
+      - name: hospital-booking-backend-container
+        image: thanh8804/hospital-booking-backend-image:10
+        ports:
+        - containerPort: 8080
+        envFrom:
+        - secretRef:
+            name: hospital-booking-backend-secret
