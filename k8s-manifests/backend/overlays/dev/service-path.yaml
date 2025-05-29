@@ -3,8 +3,6 @@ kind: Service
 metadata:
   name: hospital-booking-backend-service
   namespace: development
-  labels:
-    app: hospital-booking-backend
 spec:
   ports:
   - nodePort: 30011
