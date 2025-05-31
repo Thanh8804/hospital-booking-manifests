@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hospital-booking-backend-deployment
+  name: hospital-booking-backend
 spec:
   replicas: 1
   selector:
