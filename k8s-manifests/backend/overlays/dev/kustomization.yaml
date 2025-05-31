@@ -5,11 +5,8 @@ resources:
 
 nameSuffix: -development
 namespace: development
-patches:
+patchesStrategicMerge:
   - path: service-path.yaml
-    target:
-      kind: Service
-      name: hospital-booking-backend
 images:
   - name: thanh8804/hospital-booking-backend-image
     newTag: "16"
