@@ -1,8 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hospital-booking-backend
-  namespace: development
+  name:  hospital-booking-backend
 spec:
   ports:
   - nodePort: 30011
