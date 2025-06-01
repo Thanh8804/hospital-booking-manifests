@@ -1,0 +1,15 @@
+resources:
+  - ../../base
+
+nameSuffix: -production
+
+namespace: production
+patches:
+  - path: replicas-patch.yaml
+    target:
+      kind: Deployment
+      name: hospital-booking-frontend-deployment
+images:
+  - name: thanh8804/hospital-booking-frontend-image
+    newTag: ${BUILD_NUMBER}
+# This file is intentionally left blank.

@@ -1,0 +1,18 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../../base
+
+nameSuffix: -development
+namespace: development
+
+patches:
+  - path: service-patch.yaml
+    target:
+      kind: Service
+      name: hospital-booking-frontend
+
+images:
+  - name: thanh8804/hospital-booking-frontend-image
+    newTag: "16"

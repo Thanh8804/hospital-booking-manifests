@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hospital-booking-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hospital-booking-frontend
+  template:
+    metadata:
+      labels:
+        app: hospital-booking-frontend
+    spec:
+      containers:
+      - name: hospital-booking-frontend-container
+        image: thanh8804/hospital-booking-frontend-image:10
+        ports:
+        - containerPort: 3000
+        envFrom:
+        - secretRef:
+            name: hospital-booking-frontend-secret
