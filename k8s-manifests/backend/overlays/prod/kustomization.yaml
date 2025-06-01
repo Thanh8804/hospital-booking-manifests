@@ -11,5 +11,5 @@ patches:
       name: hospital-booking-backend-deployment
 images:
   - name: thanh8804/hospital-booking-backend-image
-    newTag: "23"
+    newTag: "24"
 # This file is intentionally left blank.
