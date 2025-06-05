@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hospital-booking-backend-deployment
+  name: hospital-booking-backend-production
   namespace: production
 spec:
   replicas: 2
