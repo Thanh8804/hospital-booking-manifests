@@ -15,4 +15,4 @@ patches:
 
 images:
   - name: thanh8804/hospital-booking-backend-image
-    newTag: "33"
+    newTag: "41"
