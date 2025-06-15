@@ -8,7 +8,7 @@ patches:
   - path: replicas-patch.yaml
     target:
       kind: Deployment
-      name: hospital-booking-frontend-deployment
+      name: hospital-booking-frontend
 images:
   - name: thanh8804/hospital-booking-frontend-image
     newTag: "21"
