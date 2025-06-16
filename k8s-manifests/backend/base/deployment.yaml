@@ -16,7 +16,7 @@ spec:
       - name: hospital-booking-backend-container
         image: thanh8804/hospital-booking-backend-image:10
         ports:
-        - containerPort: 8080
+        - containerPort: 8000
         envFrom:
         - secretRef:
             name: hospital-booking-backend-secret
